@@ -1,0 +1,43 @@
+
+        <!--share button-->
+        <div id="share-btn1" class="fb-share-box">
+          <div class="share-btn">
+            <img src="images/fb-logo.png" alt="" />
+            <p>Share</p>
+          </div>
+        </div>
+        <!--result section-->
+        <div id="result-box" class="main-box">
+          <div class="top-header">
+            <p>WHAT IS YOUR<br />LOVE SCORE?</p>
+          </div>
+          <div class="emoji">
+            <img src="images/742.png" alt="" />
+          </div>
+          <div class="result">
+            <p>95%</p>
+          </div>
+          <div class="comment">
+            <p>Congrats <span>Akib Hasan</span> ! You are a romantic person</p>
+          </div>
+        </div>
+        <!--share button-->
+        <div id="share-btn2" class="fb-share-box">
+          <div class="share-btn">
+            <img src="images/fb-logo.png" alt="" />
+            <p>Share</p>
+          </div>
+        </div>
+        <!--play button-->
+        <div id="play-btn1" class="play-box">
+          <div class="play-btn">
+            <img src="images/undo-button.png" alt="" />
+            <p>Play Again</p>
+          </div>
+        </div>
+        <!--check more section-->
+        <div id="check-more" class="check-more-box">
+          <div class="check-more">
+            <p>Check More Apps</p>
+          </div>
+        </div>

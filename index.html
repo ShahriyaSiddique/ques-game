@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <link href="css-circular-prog-bar.css" media="all" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Instant Game</title>
+  </head>
+  <body>
+    <div class="container-box">
+      <div class="basic-width">
+        <!--logo-bar section-->
+        <div class="logo-section">
+          <div class="logo">
+            <!-- <img src="images/logo.png" alt="" /> -->
+            <p>&nbsp;MLogo</p>
+          </div>
+          <span class="public-icon material-icons">public</span>
+        </div>
+
+        <!--app item section-->
+        <div id="love-score" class="app-item">
+          <div class="app-box">
+            <div class="app-cover">
+              <img src="images/photo-3.jpg" alt="" />
+            </div>
+            <div class="app-name">
+              <p onclick="result(); return false;">Test Your Love Score!</p>
+            </div>
+          </div>
+        </div>
+        <!--app item section-->
+        <div class="app-item">
+          <div class="app-box">
+            <div class="app-cover">
+              <img src="images/photo-4.jpg" alt="" />
+            </div>
+            <div class="app-name">
+              <p role="button" id="gameThree">
+                This Symbol Reveals Your True Personality
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--app item section-->
+        <div class="app-item">
+          <div class="app-box">
+            <div class="app-cover">
+              <img src="card.jpg" alt="" />
+            </div>
+            <div class="app-name">
+              <p id="gameThree">Are you good or bad at studying?</p>
+            </div>
+          </div>
+        </div>
+        <!--app item section-->
+        <div class="app-item">
+          <div class="app-box">
+            <div class="app-cover">
+              <img src="images/photo-2.jpg" alt="" />
+            </div>
+            <div class="app-name">
+              <p>No title</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script>
+      //window.alert("hello world !");
+      const fbBtn1 = document.getElementById("share-btn1");
+      const fbBtn2 = document.getElementById("share-btn2");
+      const playBtn1 = document.getElementById("play-btn1");
+      const myReult = document.getElementById("result-box");
+      const checkMore = document.getElementById("check-more");
+      const loveScore = document.getElementById("love-score");
+      fbBtn1.style.display = "none";
+      fbBtn2.style.display = "none";
+      playBtn1.style.display = "none";
+      myReult.style.display = "none";
+      checkMore.style.display = "none";
+      function result() {
+        fbBtn1.style.removeProperty("display");
+        fbBtn2.style.removeProperty("display");
+        playBtn1.style.removeProperty("display");
+        myReult.style.removeProperty("display");
+        checkMore.style.removeProperty("display");
+        loveScore.style.display = "none";
+      }
+    </script> -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

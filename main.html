@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link href="css-circular-prog-bar.css" media="all" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Instant Game</title>
+  </head>
+  <body>
+    <div class="gameContainer mx-auto">
+      <div class="logo-container my-2 mx-auto">
+        <div class="logo-box" style="border-bottom: 1px solid #ffff6a">
+          <div class="row">
+            <div class="col d-flex align-items-center">
+              <span class="material-icons text-light">public</span>
+            </div>
+            <div class="col">
+              <div
+                class="logo-logo d-flex justify-content-start align-items-center"
+              >
+                <img src="images/logo.png" class="img-fluid" alt="" />
+                <p
+                  class="m-0"
+                  style="color: red; font-family: roboto-bold; font-size: 19px"
+                >
+                  MLogo
+                </p>
+              </div>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="check-more"
+        class="check-more-container text-light"
+        style="display: none"
+      >
+        <p>Check More Apps</p>
+      </div>
+
+      <div class="game">
+        <div class="container">
+          <div class="card gameOne my-2">
+            <!-- src="https://i.imgur.com/V58Nwe7.jpg" -->
+            <img
+              class="card-img-top img-fluid"
+              src="card.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title" role="button" id="gameOne">
+                Where you will travel after this epidemic??
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="game">
+        <div class="container">
+          <div class="card gameTwo my-2">
+            <!-- src="https://i.imgur.com/V58Nwe7.jpg" -->
+            <img
+              class="card-img-top img-fluid"
+              src="card.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title" role="button" id="gameTwo">
+                Game based on gender?
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="game">
+        <div class="container">
+          <div class="card gameThree my-2">
+            <!-- src="https://i.imgur.com/V58Nwe7.jpg" -->
+            <img
+              class="card-img-top img-fluid"
+              src="images/gameThree.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title" role="button" id="gameThree">
+                স্কুল লাইফে কেমন ছাত্র ছিলেন আপনি?
+              </h5>
+            </div>
+          </div>
+
+          <div class="quesContainer bg-light">
+            <div id="qOne" class="ques">
+              <h6>আপনি কোন দিকের বেঞ্চে বসতে পছন্দ করতেন?</h6>
+              <br />
+              <label for="qOneOp1"
+                ><input
+                  type="radio"
+                  id="qOneOp1"
+                  name="qOne"
+                  checked="checked"
+                  value="10"
+                />
+                একেবারে প্রথম বেঞ্চে</label
+              ><br />
+
+              <label for="qOneOp2">
+                <input type="radio" id="qOneOp2" name="qOne" value="20" /> মাঝের
+                দিকের বেঞ্চে</label
+              ><br />
+
+              <label for="qOneOp3">
+                <input type="radio" id="qOneOp3" name="qOne" value="30" /> শেষ
+                বেঞ্চে না বসলে আপনার দিনটাই মাটি!</label
+              >
+              <button id="q1toq2" class="btn nextBtn ml-auto mt-5">Next</button>
+            </div>
+            <div id="qTwo" class="ques">
+              <h6>আপনি ক্লাসে কখন আসছেন?</h6>
+              <br />
+              <label for="qTwoOp1"
+                ><input
+                  type="radio"
+                  checked="checked"
+                  id="qTwoOp1"
+                  name="qTwo"
+                  value="10"
+                />
+                সবার আগে আসা ছিল আপনার অভ্যাস</label
+              ><br />
+
+              <label for="qTwoOp2">
+                <input type="radio" id="qTwoOp2" name="qTwo" value="20" /> মাঝে
+                মধ্যে আগে আবার মাঝে মধ্যে লেইট করে</label
+              ><br />
+
+              <label for="qTwoOp3">
+                <input type="radio" id="qTwoOp3" name="qTwo" value="30" />
+                সবার শেষে আসার জন্য দরকার হলে গেটের কাছে অপেক্ষা করতেন আপনি
+                !</label
+              >
+              <button id="q2toq3" class="btn nextBtn ml-auto mt-5">Next</button>
+            </div>
+            <div id="qThree" class="ques">
+              <h6>ক্লাসের হোমওয়ার্ককে কতটুকু গুরুত্ব দিতেন?</h6>
+              <br />
+              <label for="qThreeOp1"
+                ><input
+                  type="radio"
+                  id="qThreeOp1"
+                  name="qThree"
+                  checked="checked"
+                  value="10"
+                />
+                ক্লাসের হোমওয়ার্কের কথা স্যার ভুলে গেলেও আপনি "স্যার হোমওয়ার্ক
+                নিবেন না?" বলে মনে করিয়ে দিতেন</label
+              ><br />
+
+              <label for="qThreeOp2">
+                <input type="radio" id="qThreeOp2" name="qThree" value="20" />
+                হোমওয়ার্ক করতেন কিন্তু মাঝে মধ্যে মিস যেত</label
+              ><br />
+
+              <label for="qThreeOp3">
+                <input type="radio" id="qThreeOp3" name="qThree" value="30" />
+                কোনদিন কি ক্লাস হবে সেটাই জানতেন না !</label
+              >
+              <button id="q3toq4" class="btn nextBtn ml-auto mt-5">Next</button>
+            </div>
+            <div id="qFour" class="ques">
+              <h6>ক্লাসমেটদের সাথে ঝগড়ার ব্যাপারে আপনার অবস্থান কেমন?</h6>
+              <br />
+              <label for="qFourOp1"
+                ><input
+                  type="radio"
+                  id="qFourOp1"
+                  name="qFour"
+                  checked="checked"
+                  value="10"
+                />
+                ঝগড়াঝাটি, মারামারি এড়িয়ে চলতেন, কারণ করলে স্যাররা খারাপ ভাববেন </label
+              ><br />
+
+              <label for="qFourOp2">
+                <input type="radio" id="qFourOp2" name="qFour" value="20" />
+                ঝামেলায় পড়লে দুই তিনটা গালি দিয়ে চুপ করে থাকতেন</label
+              ><br />
+
+              <label for="qFourOp3">
+                <input type="radio" id="qFourOp3" name="qFour" value="30" />
+                অন্যকাউকে মারামারি করলেও আপনি যেয়ে এক ফাকে দুই তিনটা কিল ঘুসি
+                মেরে আসতেন!</label
+              >
+              <button id="q4toq5" class="btn nextBtn ml-auto mt-5">Next</button>
+            </div>
+            <div id="qFive" class="ques">
+              <h6>পরীক্ষায় কেমন পারফমেন্স ছিল আপনার?</h6>
+              <br />
+              <label for="qFiveOp1"
+                ><input
+                  type="radio"
+                  id="qFiveOp1"
+                  name="qFive"
+                  checked="checked"
+                  value="10"
+                />
+                ১০০ তে কেন ৯৭ পেলেন এই চিন্তায় বালিশে মুখ লুকিয়ে কাঁদতেন </label
+              ><br />
+
+              <label for="qFiveOp2">
+                <input type="radio" id="qFiveOp2" name="qFive" value="20" />
+                কোন মতে "বি" সেকশন থেকে "এ" সেকশনে যেতে পারলেই খুশি
+                থাকতেন</label
+              ><br />
+
+              <label for="qFiveOp3">
+                <input type="radio" id="qFiveOp3" name="qFive" value="30" />
+                পরীক্ষায় ৩ টার বদলে ২ টায় ফেল আসায় আপনি বন্ধুদের ট্রিট
+                দিয়েছিলেন!</label
+              >
+              <button id="resultBtn" class="btn ml-auto mt-5">Result</button>
+            </div>
+            <div id="ansResult" style="display: none">
+              <h4>
+                Hey, <span class="font-weight-bold">UserName</span> <br />
+                You are ...
+              </h4>
+              <div class="goodSide d-flex align-items-center">
+                <div class="progress-circle over50 p50 d-inline-block">
+                  <span>50%</span>
+                  <div class="left-half-clipper">
+                    <div class="first50-bar"></div>
+                    <div class="value-bar"></div>
+                  </div>
+                </div>
+                <h4>Good Student</h4>
+              </div>
+              <div class="badSide d-flex align-items-center">
+                <div class="progress-circle over50 p50 d-inline-block">
+                  <span>50%</span>
+                  <div class="left-half-clipper">
+                    <div class="first50-bar"></div>
+                    <div class="value-bar"></div>
+                  </div>
+                </div>
+                <h4>Bad Student</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
