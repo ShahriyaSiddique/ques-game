@@ -5,6 +5,7 @@ $(document).ready(function () {
 
     $("#gameThree").click(function(){
         $(".gameThree").hide();
+        $(".quesContainer").show();        
         $("#qOne").show();
         $("#check-more").show();
         $( "#check-more" ).insertAfter(".quesContainer");

@@ -5,12 +5,24 @@
 }
 body {
   background-color: #000;
+  font-family: "Roboto", sans-serif;
 }
 .gameContainer {
   width: 400px;
 }
 .logo-container {
   width: 90%;
+  border-bottom: 1px solid #ffff6a;
+}
+
+.logo-box p {
+  color: red;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.quesContainer {
+  display: none;
 }
 
 .ques {
