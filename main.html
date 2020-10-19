@@ -15,6 +15,8 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+
+    <!-- Icons -->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -24,10 +26,13 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Roboto font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- external css -->
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Instant Game</title>
@@ -61,18 +66,32 @@
 
       <div class="game">
         <div class="container">
-          <div class="card gameOne my-2">
+          <div class="card gameOne my-2" role="button" id="gameOne">
             <!-- src="https://i.imgur.com/V58Nwe7.jpg" -->
             <img
               class="card-img-top img-fluid"
-              src="images/photo-4.jpg"
+              src="images/travel.jpg"
               alt="Card image cap"
             />
             <div class="card-body">
-              <h5 class="card-title" role="button" id="gameOne">
-                Where you will travel after this epidemic??
+              <h5 class="card-title">
+                করোনার পর আপনি প্রথম কোথায় ভ্রমণ করবেন??
               </h5>
             </div>
+          </div>
+
+          <div id="gameOneResult" class="result bg-light py-2">
+            <button class="btn shareBtn mx-auto">
+              <i class="fab fa-facebook-square mr-2"></i>Share
+            </button>
+            <img src="" class="w-100" alt="" />
+            <button class="btn shareBtn mx-auto">
+              <i class="fab fa-facebook-square mr-2"></i>Share
+            </button>
+
+            <button id="againBtnOne" class="btn againBtn mx-auto">
+              <i class="fas fa-redo-alt mr-2"></i>Play again
+            </button>
           </div>
         </div>
       </div>
@@ -82,7 +101,7 @@
             <!-- src="https://i.imgur.com/V58Nwe7.jpg" -->
             <img
               class="card-img-top img-fluid"
-              src="card.jpg"
+              src="images/photo-4.jpg"
               alt="Card image cap"
             />
             <div class="card-body">
@@ -95,7 +114,7 @@
       </div>
       <div class="game">
         <div class="container">
-          <div class="card gameThree my-2">
+          <div class="card gameThree my-2" id="gameThree" role="button">
             <!-- src="https://i.imgur.com/V58Nwe7.jpg" -->
             <img
               class="card-img-top img-fluid"
@@ -103,14 +122,12 @@
               alt="Card image cap"
             />
             <div class="card-body">
-              <h5 class="card-title" role="button" id="gameThree">
-                স্কুল লাইফে কেমন ছাত্র ছিলেন আপনি?
-              </h5>
+              <h5 class="card-title">স্কুল লাইফে কেমন ছাত্র ছিলেন আপনি?</h5>
             </div>
           </div>
 
-          <div class="quesContainer bg-light py-2">
-            <div id="qOne" class="ques">
+          <div class="quesContainer bg-light py-2" class="result">
+            <div id="qOne" class="ques result">
               <h6>আপনি কোন দিকের বেঞ্চে বসতে পছন্দ করতেন?</h6>
               <br />
               <label for="qOneOp1"
@@ -135,7 +152,7 @@
               >
               <button id="q1toq2" class="btn nextBtn ml-auto mt-5">Next</button>
             </div>
-            <div id="qTwo" class="ques">
+            <div id="qTwo" class="ques result">
               <h6>আপনি ক্লাসে কখন আসছেন?</h6>
               <br />
               <label for="qTwoOp1"
@@ -161,7 +178,7 @@
               >
               <button id="q2toq3" class="btn nextBtn ml-auto mt-5">Next</button>
             </div>
-            <div id="qThree" class="ques">
+            <div id="qThree" class="ques result">
               <h6>ক্লাসের হোমওয়ার্ককে কতটুকু গুরুত্ব দিতেন?</h6>
               <br />
               <label for="qThreeOp1"
@@ -187,7 +204,7 @@
               >
               <button id="q3toq4" class="btn nextBtn ml-auto mt-5">Next</button>
             </div>
-            <div id="qFour" class="ques">
+            <div id="qFour" class="ques result">
               <h6>ক্লাসমেটদের সাথে ঝগড়ার ব্যাপারে আপনার অবস্থান কেমন?</h6>
               <br />
               <label for="qFourOp1"
@@ -213,7 +230,7 @@
               >
               <button id="q4toq5" class="btn nextBtn ml-auto mt-5">Next</button>
             </div>
-            <div id="qFive" class="ques">
+            <div id="qFive" class="ques result">
               <h6>পরীক্ষায় কেমন পারফমেন্স ছিল আপনার?</h6>
               <br />
               <label for="qFiveOp1"
@@ -240,7 +257,7 @@
               >
               <button id="resultBtn" class="btn ml-auto mt-5">Result</button>
             </div>
-            <div id="ansResult">
+            <div id="ansResultThree" class="result">
               <button class="btn shareBtn mx-auto">
                 <i class="fab fa-facebook-square mr-2"></i>Share
               </button>
@@ -249,7 +266,7 @@
                 <i class="fab fa-facebook-square mr-2"></i>Share
               </button>
 
-              <button class="btn againBtn mx-auto">
+              <button id="againBtnThree" class="btn againBtn mx-auto">
                 <i class="fas fa-redo-alt mr-2"></i>Play again
               </button>
             </div>

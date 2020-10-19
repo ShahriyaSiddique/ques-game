@@ -21,6 +21,21 @@ body {
   font-size: 19px;
 }
 
+#gameOneResult {
+  display: none;
+}
+
+#gameOne:active {
+  background-color: black;
+  transform: scale(0.75);
+  transition: all 0.7s;
+}
+#gameThree:active {
+  background-color: black;
+  transform: scale(0.75);
+  transition: all 0.7s;
+}
+
 .quesContainer {
   display: none;
 }
@@ -49,7 +64,7 @@ body {
   color: white;
 }
 
-#ansResult {
+#ansResultThree {
   display: none;
 }
 

@@ -1,17 +1,51 @@
 
 $(document).ready(function () {
     let result=0;
+
+    // game one
+
+    $("#gameOne").click(function(){
+
+        setTimeout(function(){
+            
+            $(".result").hide();           
+            $( ".card" ).show();
+            $(".gameOne").hide();
+            $(".quesContainer").show();        
+            $("#gameOneResult").show();
+            $("#check-more").show();
+            $( "#check-more" ).insertAfter(".quesContainer");
+            $( ".gameTwo" ).insertAfter("#check-more");
+            $( ".gameThree" ).insertAfter("#check-more");
+            $('html, body').scrollTop($('.logo-container').offset().top);
+
+            $("#gameOneResult img").attr("src", "images/"+Math.floor((Math.random() * 5))+".jpg");
+            
+
+
+
+        }, 500);       
+
+    });
+
    
+    // game Three 
 
     $("#gameThree").click(function(){
-        $(".gameThree").hide();
-        $(".quesContainer").show();        
-        $("#qOne").show();
-        $("#check-more").show();
-        $( "#check-more" ).insertAfter(".quesContainer");
-        $( ".gameTwo" ).insertAfter("#check-more");
-        $( ".gameOne" ).insertAfter("#check-more");
-        $('html, body').scrollTop($('.logo-container').offset().top)
+
+        setTimeout(function(){
+            $(".result").hide();   
+            $( ".card" ).show();
+            $(".gameThree").hide();
+            $(".quesContainer").show();        
+            $("#qOne").show();
+            $("#check-more").show();
+            $( "#check-more" ).insertAfter(".quesContainer");
+            $( ".gameTwo" ).insertAfter("#check-more");
+            $( ".gameOne" ).insertAfter("#check-more");
+            $('html, body').scrollTop($('.logo-container').offset().top);
+
+        }, 500);       
 
     });
 
@@ -42,25 +76,28 @@ $(document).ready(function () {
     $("#resultBtn").click(function(){
         result += parseInt($("input[name='qFive']:checked").val(), 10);
         $("#qFive").hide();   
-        $("#ansResult").show();   
+        $("#ansResultThree").show();   
 
         if(result===50){
-            $("#ansResult img").attr("src", "images/atel.jpg");
+            $("#ansResultThree img").attr("src", "images/atel.jpg");
         }
         else if(result===150)
         {
-            $("#ansResult img").attr("src", "images/lasbencher.jpg");
+            $("#ansResultThree img").attr("src", "images/lasbencher.jpg");
         }
         else{
-            $("#ansResult img").attr("src", "images/moddhbitto.jpg");
+            $("#ansResultThree img").attr("src", "images/moddhbitto.jpg");
 
         }
     });
 
-    $(".againBtn").click(function(){
+    $("#againBtnThree").click(function(){
         result = 0;
-        $("#ansResult").hide(); 
+        $("#ansResultThree").hide(); 
         $("#qOne").show();
+    });
+    $("#againBtnOne").click(function(){
+        $("#gameOneResult img").attr("src", "images/"+Math.floor((Math.random() * 5))+".jpg");
     });
 
 
