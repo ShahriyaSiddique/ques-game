@@ -43,16 +43,23 @@ $(document).ready(function () {
         $("#qFive").hide();   
         $("#ansResult").show();   
 
-        // if(result===50){
-        //     alert("Atel");
-        // }
-        // else if(result===150)
-        // {
-        //     alert("Backbencher");
-        // }
-        // else{
-        //     alert("Medium");
-        // }
+        if(result===50){
+            $("#ansResult img").attr("src", "images/atel.jpg");
+        }
+        else if(result===150)
+        {
+            $("#ansResult img").attr("src", "images/lasbencher.jpg");
+        }
+        else{
+            $("#ansResult img").attr("src", "images/moddhbitto.jpg");
+
+        }
+    });
+
+    $(".againBtn").click(function(){
+        result = 0;
+        $("#ansResult").hide(); 
+        $("#qOne").show();
     });
 
 
