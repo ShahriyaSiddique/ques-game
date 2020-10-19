@@ -19,6 +19,10 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/0ba748931a.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link href="css-circular-prog-bar.css" media="all" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
@@ -240,31 +244,18 @@
               >
               <button id="resultBtn" class="btn ml-auto mt-5">Result</button>
             </div>
-            <div id="ansResult" style="display: none">
-              <h4>
-                Hey, <span class="font-weight-bold">UserName</span> <br />
-                You are ...
-              </h4>
-              <div class="goodSide d-flex align-items-center">
-                <div class="progress-circle over50 p50 d-inline-block">
-                  <span>50%</span>
-                  <div class="left-half-clipper">
-                    <div class="first50-bar"></div>
-                    <div class="value-bar"></div>
-                  </div>
-                </div>
-                <h4>Good Student</h4>
-              </div>
-              <div class="badSide d-flex align-items-center">
-                <div class="progress-circle over50 p50 d-inline-block">
-                  <span>50%</span>
-                  <div class="left-half-clipper">
-                    <div class="first50-bar"></div>
-                    <div class="value-bar"></div>
-                  </div>
-                </div>
-                <h4>Bad Student</h4>
-              </div>
+            <div id="ansResult">
+              <button class="btn shareBtn mx-auto">
+                <i class="fab fa-facebook-square mr-2"></i>Share
+              </button>
+              <img src="images/lasbencher.jpg" class="img-fluid" alt="" />
+              <button class="btn shareBtn mx-auto">
+                <i class="fab fa-facebook-square mr-2"></i>Share
+              </button>
+
+              <button class="btn againBtn mx-auto">
+                <i class="fas fa-redo-alt mr-2"></i>Play again
+              </button>
             </div>
           </div>
         </div>
